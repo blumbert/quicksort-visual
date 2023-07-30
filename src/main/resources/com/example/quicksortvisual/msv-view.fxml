@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quicksortvisual.QSVController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="130.0" text="How many rectangles? :" />
+            <TextField fx:id="rectCountField" prefHeight="5.0" prefWidth="50.0" />
+            <Button mnemonicParsing="false" onAction="#onBuildButtonClick" text="Build Visual" />
+            <Button mnemonicParsing="false" onAction="#onSortButtonClick" text="Sort" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="700.0" prefWidth="1200.0" spacing="20.0">
+         <children>
+            <TextArea editable="false" prefHeight="700.0" prefWidth="400.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></TextArea>
+            <Pane fx:id="animationPane" prefHeight="700.0" prefWidth="740.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
